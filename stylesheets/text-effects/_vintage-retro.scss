@@ -7,5 +7,6 @@
   $offset-first: $proportional + 1px;
   $offset-second: $proportional + 3px;
   font-size: $font-size;
+  color: $text-color;
   @include text-shadow($offset-first $offset-first $background-color, $offset-second $offset-second $text-color);
 }
