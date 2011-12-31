@@ -1,4 +1,4 @@
-@import "compass";
+@import "compass/css3/text-shadow";
 
 @mixin vintage-retro($font-size, $text-color, $bg-color) {
   @if $font-size < 30px { @warn "Text Effects shouldn't be used on fonts smaller than 30px."}
