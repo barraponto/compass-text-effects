@@ -1,0 +1,9 @@
+@import "compass";
+
+@mixin vintage-retro($font-size, $text-color, $bg-color) {
+  @if $font-size < 30px { @warn "Text Effects shouldn't be used on fonts smaller than 30px."}
+  $proportional: floor($font-size / 50);
+  $offset-first: $proportional + 1px;
+  $offset-second: $proportional + 3px;
+  @include text-shadow($offset-first $offset-first $bg-color, $offset-second $offset-second $text-color);
+}
