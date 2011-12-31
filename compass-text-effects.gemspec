@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date = "2011-12-31"
 
   # Gem Details
-  s.name = "Compass Text Effects"
+  s.name = "compass-text-effects"
   s.summary = %q{Heading text effects for Compass}
   s.description = %q{Heading text effects for Compass}
   s.authors = ["Capi Etheriel"]
