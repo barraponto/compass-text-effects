@@ -8,5 +8,6 @@ $te-neon-shadow-color: #FF00DE !default;
   @include te-font-size($font-size);
   color: $color;
   $proportional: floor($font-size / 20);
+  padding: $proportional * 10 0; // firefox requires the hugest padding. chrome and opera are saner.
   @include text-shadow(0 0 $proportional $color, 0 0 $proportional * 2 $color, 0 0 $proportional * 3 $color, 0 0 $proportional * 4 $shadow-color, 0 0 $proportional * 7 $shadow-color, 0 0 $proportional * 8 $shadow-color, 0 0 $proportional * 10 $shadow-color, 0 0 $proportional * 15 $shadow-color);
 }
