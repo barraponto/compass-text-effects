@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.version = "0.0.1"
-  s.date = "2011-12-31"
+  s.version = "0.1.1"
+  s.date = "2012-01-01"
 
   # Gem Details
   s.name = "compass-text-effects"

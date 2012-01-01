@@ -1,8 +1,8 @@
 @import "compass/css3/text-shadow";
 @import "text-effects/base";
 
-$te-vintage-retro-color: white !default;
-$te-vintage-retro-background-color: #FF00DE !default;
+$te-vintage-retro-color: #707070 !default;
+$te-vintage-retro-background-color: white !default;
 
 @mixin vintage-retro($font-size: $te-font-size, $color: $te-vintage-retro-color, $background-color: $te-vintage-retro-background-color) {
   @include te-font-size($font-size);
