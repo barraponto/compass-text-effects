@@ -1,4 +1,7 @@
 // Some variable defaults
 $te-font-size: 200px !default;
-$te-color: #332222 !default;
-$te-background-color: #FFFFFF !default;
+
+@mixin te-font-size($font-size) {
+  @if $font-size < 30px { @warn "Text Effects shouldn't be used on fonts smaller than 30px." }
+  font-size: $font-size;
+}

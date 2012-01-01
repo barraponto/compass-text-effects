@@ -1,9 +1,11 @@
 @import "compass/css3/text-shadow";
 @import "text-effects/base";
 
-@mixin vintage-retro($font-size: $te-font-size, $color: $te-color, $background-color: $te-background-color) {
-  @if $font-size < 30px { @warn "Text Effects shouldn't be used on fonts smaller than 30px." }
-  font-size: $font-size;
+$te-vintage-retro-color: white !default;
+$te-vintage-retro-background-color: #FF00DE !default;
+
+@mixin vintage-retro($font-size: $te-font-size, $color: $te-vintage-retro-color, $background-color: $te-vintage-retro-background-color) {
+  @include te-font-size($font-size);
   color: $color;
   $proportional: floor($font-size / 50);
   $offset-first: $proportional + 1px;
